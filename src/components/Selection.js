@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Selection.css';
 
 const Selection = (props) => {   
     function helper(e){
@@ -8,8 +9,11 @@ const Selection = (props) => {
    
     const { applyColor } = props;
     console.log("Selection applyColor background is == ", applyColor.background);
-return <div className='fix-box' onClick={(e) => {helper(e)}}>        
-    </div>;
+    return (
+        <div className='fix-box' onClick={(e) => {helper(e)}}> 
+            <h2>Selection</h2>       
+        </div>
+    )
 }
 
 export default Selection;
